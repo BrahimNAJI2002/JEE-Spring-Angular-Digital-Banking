@@ -8,7 +8,7 @@ describe('CustomerAccountsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CustomerAccountsComponent]
+      declarations: [CustomerAccountsComponent]
     })
     .compileComponents();
     

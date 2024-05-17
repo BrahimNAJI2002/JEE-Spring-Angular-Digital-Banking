@@ -1,15 +1,14 @@
+
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-// @ts-ignore
 import {Customer} from "../model/customer.model";
-
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService {
-  backendHost: string = "http://localhost/8085";
+  backendHost  ="http://localhost:8084";
   constructor(private http:HttpClient) { }
 
   public getCustomers():Observable<Array<Customer>>{
